@@ -714,7 +714,7 @@ section.recent-event{
     padding: 60px 80px 80px 80px;
     /* width: 100% !important; */
     max-width: 100%;
-    background-color: #d4d4d4
+    background-color: #ef3e2e
 }
 
 .about-content{
@@ -829,7 +829,7 @@ section.recent-event{
 .our-experts{
     padding-top: 70px;
     padding-bottom: 120px;
-    background-color: #efefef;
+
 }
 
 .our-experts .section-title{
@@ -880,8 +880,10 @@ strong.expert-tag{
 
 /*===== talk about us ====*/
 .talk-about-us{
-    padding-bottom: 110px;
-    padding-top: 100px;
+    /* padding-bottom: 110px;
+    padding-top: 100px; */
+    color:white;
+    background-color: #ef3e2e;
 }
 
 .talk-about-us strong{
@@ -1080,6 +1082,15 @@ strong.expert-tag{
     padding: 10px 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     background-color: #ef3e2e;
+
+}
+.dwnload_broch{
+    margin-top: 15px;
+    padding: 10px 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background-color: #ef3e2e;
+    color: white;
+    font-size: 20px;
 }
 .sales_Enquiry_know-more
 {
@@ -1090,15 +1101,22 @@ strong.expert-tag{
 .video_h3{
     text-align: center;
     font-size: 30px;
-    text-transform: uppercase;
-    color: #ed462f
+    color: #ed462f;
+    font-weight: 700;
 }
-.video_p{
-    color: #484848;
-    margin-bottom: 15px !important;
+.video_h3_project{
     text-align: center;
-    font-size: 18px;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.video_p{
+    font-weight: 500;
     line-height: 1.5;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
 }
 .ongng_prjcts
 {
@@ -1208,4 +1226,70 @@ strong.expert-tag{
 }
 .footer_menu li a{
     color: #fff;
+}
+.fill {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 85%
+}
+.logo_absolute{
+    position: absolute;
+    z-index: 1;
+    margin-top: 2%;
+    MARGIN-LEFT: 8%;
+}
+.three_divs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 5%;
+}
+.four_divs .row{
+    background-color: #ef3e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 13%;
+}
+.four_div_p{
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+
+}
+.red-arrow{
+
+    list-style: none;
+    margin-left: 10px;
+    padding-bottom: 2%;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.material-icons {
+	vertical-align: middle;
+	margin-right: 1em;
+}
+.card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.cardBtn
+{
+    font-size: 18px;
+    color: #ef3e2e;
+    width: 100%;
+    text-align: inherit;
 }
