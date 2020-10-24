@@ -21,7 +21,7 @@
     
     <body>
         <!--======== header =========-->
-        <header id="home">
+        <header id="home" class="fixed-top">
           
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -36,13 +36,22 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <a class="navbar-brand default-logo" href="#"> <img src="https://www.kohinoorpune.com/hs-fs/hubfs/Kohinoor%20new%20logo%20for%20website-01.png?width=161&name=Kohinoor%20new%20logo%20for%20website-01.png" alt=""></a>
+                                
+                                <p class="navbar-brand default-logo" style="padding-top: 20px;">                                 
+                                    <a href="tel: +91 9082004094" style="color: white; text-decoration: none;">
+                                        <i class="fa fa-phone" class="ri-phone-line"></i>
+                                        <span style="font-size: 14px;">+91 9082004094</span></a>
+                                    <a href="https://api.whatsapp.com/send?phone=+919167271425">
+                                        <img src="images/w1.png"  class="ri-phone-line" style="margin-top: -12px;">
+                                    </a>
+                                </p> 
                             </div>
 
                             <div class="collapse navbar-collapse" id="menu-4">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a class="scroll" href="#home">Home</a></li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Kohinoor <span class="caret"></span></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Sapphire <span class="caret"></span></a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <li><a href="">About Us</a></li>
@@ -64,13 +73,15 @@
                                                
                                             </ul>
                                         </div>
-                                    </li>
-                                    <li><a href="blog-fullwidth.html">Blogs</a></li>
-                                    <li><a href="gallery.html">NRI Partner</a></li>
-                                    <li><a href="service.html">Channel Partner</a></li>
+                                    </li>        
                                     <li><a href="contact.html">Contact Us</a></li>
-                                    <li><button class="sales_Enquiry" href="">SALES ENQUIRY</button></li>
-                                   
+                                    <!-- <li>
+                                        <a href="tel: +91 9082004094" style="color: white;" class="ri-phone-line">&nbsp; +91 9082004094</a>
+                                    </li>
+                                    <li>                                        
+                                        <a href="https://api.whatsapp.com/send?phone=+919167271425" class="whatsapp"><img src="images/w1.png"></a> 
+                                    </li> -->
+                                    <li><button class="sales_Enquiry" href="">SALES ENQUIRY</button></li>                                   
                                    
                                 </ul>
                             </div>
@@ -83,10 +94,52 @@
         
         <!--======== intro =========-->
         <img class="logo_absolute" src="https://www.kohinoorpune.com/hs-fs/hubfs/Kohinoor%20Sapphire-LP%20Logo.jpg?width=224&name=Kohinoor%20Sapphire-LP%20Logo.jpg">
-        <div class="fill">
-           
-            <img src="https://www.kohinoorpune.com/hubfs/Sapphire.jpg" alt="" height="650" />
+        <div class="wraper"> 
+            <div class="fill">
+                <img src="https://www.kohinoorpune.com/hubfs/Sapphire.jpg" alt="" height="650" />
+            </div>
+            <div class="head_text">
+                <div class="overlay">
+                    <h2>Bringing an envious lifestyle to Pune</h2>
+                    <h4>Premium 2 BHK Homes Starting From 49.6 Lacs* <br> 
+                        At(Infographic) Tathawade,Pune</h4>
+                    <h4> For Exclusive Offers* <button type="button" class="pre-btn" 
+                        data-toggle="modal" data-target="#prebookform">Pre-Book Now</button></h4>
+                </div>
+            </div>
         </div>
+
+        <div class="modal fade" id="prebookform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h3 class="modal-title" id="exampleModalLabel">Pre-Book Now</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form>
+                  <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Please enter full name">
+                      </div>
+                    <div class="form-group">
+                      <label for="email1">Email address</label>
+                      <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email address">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter Phone number">
+                    </div>
+                  </div>
+                  <div class="modal-footer border-top-0 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         <!-- <section class="intro"  >
              <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12" style="background-image: url(https://www.kohinoorpune.com/hubfs/Sapphire.jpg);">
@@ -326,20 +379,43 @@
                             <ol class="carousel-indicators" style="margin-bottom: 0%;">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active" style="background-color: black;border: 2px solid white"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="1" style="background-color: black;border: 2px solid white"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2" style="background-color: black;border: 2px solid white"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3" style="background-color: black;border: 2px solid white"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4" style="background-color: black;border: 2px solid white"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5" style="background-color: black;border: 2px solid white"></li>
                             </ol>
     
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
                                     <div class="intro-content text-center">
-                                       <img src="https://www.kohinoorpune.com/hubfs/Kohinoor%20Sapphire_LP%20Banner_Dec%2019_Mid%20Banner-04%20(1).jpg">
+                                       <img class="img-level" src="https://www.kohinoorpune.com/hubfs/Kohinoor%20Sapphire_LP%20Banner_Dec%2019_Mid%20Banner-04%20(1).jpg">
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="intro-content text-center">
-                                        <img src="https://www.kohinoorpune.com/hubfs/Kohinoor%20Sapphire_LP%20Banner_Dec%2019_Mid%20Banner-02%20(1).jpg">
+                                        <img class="img-level" src="https://www.kohinoorpune.com/hubfs/Kohinoor%20Sapphire_LP%20Banner_Dec%2019_Mid%20Banner-02%20(1).jpg">
                                     </div>
                                 </div>
-                              
+                                <div class="item">
+                                    <div class="intro-content text-center">
+                                        <img class="img-level" src="./images/Gallery-1.jpg">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="intro-content text-center">
+                                        <img class="img-level" src="./images/Gallery-2.jpg">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="intro-content text-center">
+                                        <img class="img-level" src="./images/Gallery-3.jpg">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="intro-content text-center">
+                                        <img class="img-level" src="./images/Gallery-4.jpg">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="four-slide">
@@ -855,7 +931,7 @@
                      <div class="col-md-10 col-sm-10 col-md-10 col-md-offset-1 footerDiv">
                         <ul class="footer_menu">
                             <li class="hs-menu-item hs-menu-depth-1"><a href="" role="menuitem" target="_self">Home</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1"><a href="" role="menuitem" target="_self">About Kohinoor</a></li>
+                            <li class="hs-menu-item hs-menu-depth-1"><a href="" role="menuitem" target="_self">About Sapphire</a></li>
                             <li class="hs-menu-item hs-menu-depth-1"><a href="" role="menuitem" target="_self">Projects</a></li>
                             <li class="hs-menu-item hs-menu-depth-1"><a href="" role="menuitem" target="_self">Blogs</a></li>
                             <li class="hs-menu-item hs-menu-depth-1"><a href="" role="menuitem" target="_self">NRI Corner</a></li>

@@ -25,7 +25,6 @@ p{
 }
 
 section{
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -235,6 +234,25 @@ h2.section-title{
     padding: 20px;
 }
 
+.ri-phone-line {
+    padding-top: 2px;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    color: aquamarine !important;
+}
+
+.whatsapp {
+    padding-top: 20px !important;
+}
+
+.fixed-top {
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
 
 .cart-number {
     background-color: #8fc93f;
@@ -403,6 +421,12 @@ h2.section-title{
     
     .default-menu.navbar-default .navbar-nav > li:first-child > a{
         padding-left: 20px !important;
+    }
+    .wraper .head_text {
+        padding-top: 35% !important;
+    }
+    .logo_absolute  {
+        margin-top: 14% !important;
     }
 }
 
@@ -790,7 +814,6 @@ section.recent-event{
 
 /*===== extra feature ====*/
 .extra-feature{
-    padding-top: 100px;
     overflow: hidden;
     background-color: #F7F7F7;
 }
@@ -1227,22 +1250,87 @@ strong.expert-tag{
 .footer_menu li a{
     color: #fff;
 }
-.fill {
-    position: relative;
+.wraper {
+    position:relative;
+    width:100%;
+    height:100%;
+  }
+.wraper .fill {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
 }
-.fill img {
+.wraper .fill img {
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 85%
+    min-height: 85%; 
 }
+.wraper .head_text {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding-top:18%;    
+    text-align: center;
+}
+
+.wraper .head_text .overlay {
+    background: linear-gradient( rgb(234 227 227 / 60%), rgb(246 232 232 / 64%) );
+    padding: 10px;
+}
+
+.wraper .head_text .overlay h2 {
+    font-size: 40px;
+    color: #d72911;
+    font-weight: 800;
+    word-spacing: 2;
+    text-transform: uppercase;
+}
+
+.wraper .head_text .overlay h4 {
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    word-spacing: 2;
+    line-height: 1.5;
+}
+
+.pre-btn {
+    padding: 10px 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background-color: #ef3e2e;
+    font-size: 20px;
+}
+
+.modal-header .close {
+    margin-top: -40px;
+    font-size: 40px;
+}
+
+.modal-open .modal {
+    margin-top: 5%;
+}
+
+.modal-footer { 
+    text-align: center;
+}
+
+.img-level {
+    height: 550px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+.modal-dialog {
+    width: 450px;
+}
+}
+
 .logo_absolute{
     position: absolute;
     z-index: 1;
-    margin-top: 2%;
+    margin-top: 6%;
     MARGIN-LEFT: 8%;
 }
 .three_divs
