@@ -1,3 +1,8 @@
+<?php
+include 'sendmail.php' ;
+?>
+            
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -75,14 +80,7 @@
                                         </div>
                                     </li>        
                                     <li><a href="contact.html">Contact Us</a></li>
-                                    <!-- <li>
-                                        <a href="tel: +91 9082004094" style="color: white;" class="ri-phone-line">&nbsp; +91 9082004094</a>
-                                    </li>
-                                    <li>                                        
-                                        <a href="https://api.whatsapp.com/send?phone=+919167271425" class="whatsapp"><img src="images/w1.png"></a> 
-                                    </li> -->
-                                    <li><button class="sales_Enquiry" href="">SALES ENQUIRY</button></li>                                   
-                                   
+                                    <li><button class="sales_Enquiry" href="">SALES ENQUIRY</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -520,35 +518,79 @@
                    
                     <div class="col-md-4 col-xs-4 col-sm-4"> 
                        <ul>
-
-                           <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Club House</li>
-                           <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Multipurpose Hall</li>
-                           <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Reception & Waiting Area</li>
-                           <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Indoor Games: Table Tennis, Carrom & Chess</li>
-                           <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Well Equipped Gym</li>
-                       </ul>
+                        <li class="red-arrow">
+                            <img class="img-responsive" src="./images/am-ico-clubhous-active.svg">
+                            <span class="li-text">Club House</span>
+                        </li>
+                        <li class="red-arrow">
+                            <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                            <span class="li-text">Multipurpose Hall</span>
+                        </li>
+                        <li class="red-arrow">
+                            <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                            <span class="li-text">Reception & Waiting Area</span>
+                        </li>
+                        <li class="red-arrow">
+                            <img class="img-responsive" src="./images/am-ico-indoorga-active.svg">
+                            <span class="li-text">Indoor Games: Table Tennis, Carrom <br>& Chess</span>
+                        </li>
+                        <li class="red-arrow">
+                            <img class="img-responsive" src="./images/am-ico-gymnasiu-active.svg">
+                            <span class="li-text">Well Equipped Gym</span>
+                        </li>
+                    </ul>
                     </div>  
                     
                     <div class="col-md-4 col-xs-4 col-sm-4"> 
                         <ul>
-
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Kids’ Play Area</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Lifestyle Amenities                            </li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Toddlers’ Room / Creche</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Co-Working Space with Café</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Well-maintained Garden</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Pergola Seating</li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-kidsplay-active.svg">
+                                <span class="li-text">Kids’ Play Area</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Lifestyle Amenities</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Toddlers’ Room / Creche</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Co-Working Space with Café</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-normalpa-active.svg">
+                                <span class="li-text">Well-maintained Garden</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Pergola Seating</span>
+                            </li>
                         </ul>
                     </div>  
                     <div class="col-md-4 col-xs-4 col-sm-4"> 
                         <ul>
-
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Senior Citizens’ Deck</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Open Air Gym</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Swimming Pool with Kids’ Pool</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Multipurpose Game Court</li>
-                            <li class="red-arrow"><i class="fa fa-caret-right" style="font-size:20px;color:red;display: inline-block;float: left;margin-left: 10px;"></i>Amphitheatre</li>
-                            
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-concierg-active.svg">
+                                <span class="li-text">Senior Citizens’ Deck</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Open Air Gym</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-kids-swim-active.svg">
+                                <span class="li-text">Swimming Pool with Kids’ Pool</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Multipurpose Game Court</span>
+                            </li>
+                            <li class="red-arrow">
+                                <img class="img-responsive" src="./images/am-ico-partyhal-active.svg">
+                                <span class="li-text">Amphitheatre</span>
+                            </li>
                         </ul>
                     </div>  
                 </div>  

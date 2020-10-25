@@ -241,6 +241,31 @@ h2.section-title{
     color: aquamarine !important;
 }
 
+.img-responsive {
+    max-width: 100%;
+    height: 22px;
+    max-height: 100%;
+    width: 22px;
+    display: inline-block;
+    float: left;
+}
+.li-text {
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 15px 5px 15px;
+}
+
+.amenities-li {
+    padding: 4px 0 5px 40px;
+    margin: 0 10px 0 0;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: calc(50% - 20px);
+    position: relative;
+}
+
 .whatsapp {
     padding-top: 20px !important;
 }
@@ -1358,12 +1383,12 @@ strong.expert-tag{
 
 }
 .red-arrow{
-
     list-style: none;
-    margin-left: 10px;
+    padding-bottom: 20px;
+    /* margin-left: 10px;
     padding-bottom: 2%;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 600; */
 }
 .material-icons {
 	vertical-align: middle;
