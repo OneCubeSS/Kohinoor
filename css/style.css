@@ -454,6 +454,9 @@ h2.section-title{
     .logo_absolute  {
         margin-top: 14% !important;
     }
+    .modal-content {
+        top: 55px;
+    }
 }
 
 .default-menu.menu-4{
@@ -1387,6 +1390,9 @@ strong.expert-tag{
 @media (min-width: 768px) {
 .modal-dialog {
     width: 450px;
+}
+.modal-content {
+    top: 55px;
 }
 }
 

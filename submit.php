@@ -60,5 +60,6 @@
                     alert('EMAIL FAILED');
                 </script>";
         }
+        header("Location: index.html");
     }
 ?>
