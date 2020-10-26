@@ -111,19 +111,19 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form>
+                    <form action="send.php" id="bookcta" method="post">
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="name" class="text-lbl">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Please enter full name">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Please enter full name">
                             </div>
                             <div class="form-group">
                                 <label for="email1" class="text-lbl">Email address</label>
-                                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email address">
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email address">
                             </div>
                             <div class="form-group">
-                                <label for="phone" class="text-lbl">Phone Number</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Enter Phone number">
+                                <label for="mobile" class="text-lbl">Phone Number</label>
+                                <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Enter Phone number">
                             </div>
                         </div>
                         <div class="modal-footer border-top-0 d-flex justify-content-center">
@@ -144,19 +144,19 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form>
+                    <form action="send.php" id="ctadownload" method="post">
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="name" class="text-lbl">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Please enter full name">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Please enter full name">
                             </div>
                             <div class="form-group">
                                 <label for="email" class="text-lbl">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email address">
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email address">
                             </div>
                             <div class="form-group">
-                                <label for="phone" class="text-lbl">Phone Number</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Enter Phone number">
+                                <label for="mobile" class="text-lbl">Phone Number</label>
+                                <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Enter Phone number">
                             </div>
                         </div>
                         <div class="modal-footer border-top-0 d-flex justify-content-center">
@@ -904,7 +904,7 @@
                     </div>
                     <div class="col-md-12 col-md-12 col-xs-12">
                         <div class="col-md-6 col-md-12 col-xs-12">
-                        <form action="submit.php" id="contactus" method="post" class="contactus">                          
+                        <form action="submit.php" id="contactus" method="post">                          
                             <div class="form-group">
                                 <label for="name" class="text-lbl">Your Name</label>
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Please enter Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
