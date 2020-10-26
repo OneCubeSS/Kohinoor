@@ -1,65 +1,85 @@
 <?php
-    if(isset($_POST['submit']))
-    {
+
+use PHPMailer\PHPMailer\PHPMailer; 
+  
+    require_once 'phpmailer/Exception.php';
+    require_once 'phpmailer/PHPMailer.php';
+    require_once 'phpmailer/SMTP.php';
+    
+     $mail = new PHPMailer(true);
+
+     $alert = ''; 
+  
+    if(isset($_POST['submit'])){
         $name = $_POST['name']; // Get Name value from HTML Form
         $email_id = $_POST['email']; // Get Email Value
         $mobile_no = $_POST['mobile']; // Get Mobile No
-        $msg = $_POST['message']; // Get Message Value
-         
-        $to = "chsowmya505@gmail.com"; // You can change here your Email
-        $subject = "'$name' has been sent a mail"; // This is your subject
-         
-        // HTML Message Starts here
-        $message ="
+        $msg = $_POST['message']; // Get Message Value          
+          
+
+        try{
+          
+        $mail->IsSMTP();
+        $mail->Host = 'smtp.gmail.com'; // Your Domain Name
+          
+        $mail->SMTPAuth = true;
+       
+        $mail->Username = "onecubesolutions00@gmail.com"; // Your Email ID which you want to use as SMTP server
+        $mail->Password = "OneCubess07"; // Password of your email id 
+
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = '587';
+
+
+          
+        $mail->setFrom ('onecubsolutions00@gmail.com');  // which Email Id you want to send from 
+       
+        $mail->AddAddress ("frakhangi@gmail.com"); // blissrealtywakad@gmail.com On which email id you want to get the message
+        
+          
+        $mail->IsHTML(true);
+          
+        $mail->Subject = "Enquiry from Website submitted by $name"; // This is your subject you can change
+          
+        // body Message Starts here
+          
+        $mail->Body = "
         <html>
             <body>
-                <table style='width:600px;'>
+                <table>
                     <tbody>
                         <tr>
-                            <td style='width:150px'><strong>Name: </strong></td>
-                            <td style='width:400px'>$name</td>
+                            <td><strong>Name: </strong></td>
+                            <td>$name</td>
                         </tr>
                         <tr>
-                            <td style='width:150px'><strong>Email ID: </strong></td>
-                            <td style='width:400px'>$email_id</td>
+                            <td><strong>Email ID: </strong></td>
+                            <td>$email_id</td>
                         </tr>
                         <tr>
-                            <td style='width:150px'><strong>Mobile No: </strong></td>
-                            <td style='width:400px'>$mobile_no</td>
+                            <td><strong>Mobile No: </strong></td>
+                            <td>$mobile_no</td>
                         </tr>
                         <tr>
-                            <td style='width:150px'><strong>Message: </strong></td>
-                            <td style='width:400px'>$msg</td>
+                            <td><strong>Message: </strong></td>
+                            <td>$msg</td>
                         </tr>
                     </tbody>
                 </table>
             </body>
         </html>
         ";
-        // HTML Message Ends here
-         
-        // Always set content-type when sending HTML email
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
- 
-        // More headers
-        $headers .= 'From: soumya <chsowmya505@gmail.com>' . "\r\n"; // Give an email id on which you want get a reply. User will get a mail from this email id
-        //$headers .= 'Cc: info@websapex.com' . "\r\n"; // If you want add cc
-        //$headers .= 'Bcc: boss@websapex.com' . "\r\n"; // If you want add Bcc
-         
-        if(mail($to,$subject,$message,$headers)){
-            // Message if mail has been sent
-            echo "<script>
-                    alert('Mail has been sent Successfully.');
-                </script>";
-        }
- 
-        else{
-            // Message if mail has been not sent
-            echo "<script>
-                    alert('EMAIL FAILED');
-                </script>";
-        }
-        header("Location: index.html");
+        //  Ends here
+          
+              $mail->send();
+              $alert = '<div class="alert-success">
+                        <span>Send Successfully Thank you for contacting us!! </span> </div>';
+                    }
+                    catch(Exception $e)
+                    {
+                        $alert = '<div class="alert-error">
+                        <span>'.$e->getMessage().'</span> </div>'; 
+                    }       
+  
     }
 ?>
