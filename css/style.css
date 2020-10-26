@@ -24,7 +24,8 @@ p{
     background-color: #8FC93F !important;
 }
 
-section{
+section {
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
@@ -253,7 +254,7 @@ h2.section-title{
     line-height: 1.5;
     font-weight: 600;
     font-size: 15px;
-    padding: 10px 15px 5px 15px;
+    padding: 15px 15px 5px 15px;
 }
 
 .amenities-li {
@@ -757,11 +758,7 @@ section.recent-event{
 
 /*===== about us ====*/
 .about-us{
-    /* padding-bottom: 0;
-    padding-top: 0; */
-    margin-bottom: 80px;
     padding: 60px 80px 80px 80px;
-    /* width: 100% !important; */
     max-width: 100%;
     background-color: #ef3e2e
 }
@@ -875,8 +872,8 @@ section.recent-event{
 }
 /*===== our experts ====*/
 .our-experts{
-    padding-top: 70px;
-    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom: 100px;
 
 }
 
@@ -991,6 +988,12 @@ strong.expert-tag{
 }
 
 /*===== contact ====*/
+.text-lbl {
+    padding: 8px 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ef3e2e;
+}
 .contact{
     padding-top: 90px;
 }
@@ -1148,13 +1151,14 @@ strong.expert-tag{
 }
 .video_h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
     color: #ed462f;
     font-weight: 700;
+    padding-bottom: 20px;
 }
 .video_h3_project{
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
     color: white;
     font-weight: 700;
 }
@@ -1326,6 +1330,33 @@ strong.expert-tag{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     background-color: #ef3e2e;
     font-size: 20px;
+    font-weight: 600;
+}
+
+.send-btn {
+    padding: 5px 10px;
+    background-color: #ef3e2e;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: #ef3e2e;
+}
+
+.cta {
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: flex-end;
+    padding: 5% 5% 5% 5%;
+}
+
+.cta-btn {
+    padding: 10px 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background-color:#fff;
+    color: #ef3e2e;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .modal-header .close {
@@ -1339,6 +1370,13 @@ strong.expert-tag{
 
 .modal-footer { 
     text-align: center;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #ef3e2e;
 }
 
 .img-level {
@@ -1372,7 +1410,7 @@ strong.expert-tag{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-left: 13%;
+    margin-left: 7%;
 }
 .four_div_p{
     font-weight: 500;
