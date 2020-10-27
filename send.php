@@ -12,8 +12,9 @@ use PHPMailer\PHPMailer\PHPMailer;
   
     if(isset($_POST['submit'])){
         $name = $_POST['name']; // Get Name value from HTML Form
-        $email_id = $_POST['email']; // Get Email Value
-        $mobile_no = $_POST['mobile']; // Get Mobile No        
+        $email = $_POST['email']; // Get Email Value
+        $mobile = $_POST['mobile']; // Get Mobile No  
+        $message = $_POST['message'];      
           
 
         try{
@@ -31,7 +32,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 
           
-        $mail->setFrom ('onecubsolutions00@gmail.com');  // which Email Id you want to send from 
+        $mail->setFrom ('onecubesolutions00@gmail.com');  // which Email Id you want to send from 
        
         $mail->AddAddress ("frakhangi@gmail.com"); // blissrealtywakad@gmail.com On which email id you want to get the message
         
@@ -53,17 +54,22 @@ use PHPMailer\PHPMailer\PHPMailer;
                         </tr>
                         <tr>
                             <td><strong>Email ID: </strong></td>
-                            <td>$email_id</td>
+                            <td>$email</td>
                         </tr>
                         <tr>
                             <td><strong>Mobile No: </strong></td>
-                            <td>$mobile_no</td>
+                            <td>$mobile</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Message: </strong></td>
+                            <td>$message</td>
                         </tr>
                     </tbody>
                 </table>
             </body>
         </html>
         ";
+        
         //  Ends here
           
               $mail->send();
